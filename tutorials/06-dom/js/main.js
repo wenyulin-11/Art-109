@@ -1,13 +1,16 @@
 // console.log("javascript")
 
 
-//selcet html element
+// select HTML elements
 const header = document.querySelector("#header");
-const changehaederbutton = document.querySelector("#change-header-button");
+const changeHeaderButton = document.querySelector("#change-header-button");
 const changeThemeButton = document.querySelector("#change-theme-button");
+const img1 = document.querySelector("#img1");
+const img2 = document.querySelector("#img2");
+const img3 = document.querySelector("#img3");
 
 //change header with button click
-changehaederbutton.addEventListener("click", () => {
+changeHeaderButton.addEventListener("click", () => {
     header.innerHTML= "pow!!";
 });
 
@@ -28,5 +31,17 @@ changeThemeButton.addEventListener("click", () => {
     //add/remove dark class to body
 document.body.classList.toggle("dark");
 changeButtonText();
+})
+
+//toggle images visibility
+
+img1.addEventListener("click", () => {
+    img2.classList.remove("hidden");
+
+}) 
+
+img2.addEventListener("click", () => {
+    img3.classList.remove("hidden");
+
 })
 

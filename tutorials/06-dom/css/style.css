@@ -7,38 +7,39 @@ CSS RESETS
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 
 /* Remove default spacing */
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 
 /* Respect user font settings */
 html {
-  font-size: 100%;
+    font-size: 100%;
 }
 
 
 /* Make images responsive */
 img {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
 }
+
 /*clolor variables*/
 
 :root {
-    --bg:#eee;
-    --font:#222
+    --bg: #eee;
+    --font: #222
 }
 
 body.dark {
-    --bg:#222;
-    --font:#44e62
+    --bg: #222;
+    --font: #44e62
 }
 
 
@@ -50,7 +51,7 @@ body.dark {
 body {
     background-color: var(--bg);
     color: var(--font);
-    
+
 }
 
 
@@ -62,7 +63,32 @@ header {
 
 main {
     max-width: 60rem;
-margin: 0 auto;
+    margin: 0 auto;
 
 }
 
+img {
+    width: 30rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#img1 {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+}
+
+#img2 {
+    position: absolute;
+    top: 6rem;
+    right: 20rem;
+}
+
+#img3 {
+    position: absolute;
+    top: 5rem;
+    right: 14rem;
+}
