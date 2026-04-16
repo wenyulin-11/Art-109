@@ -9,7 +9,7 @@ const descriptionInput = document.getElementById('description');
 let items = [
   {
     id: 1,
-    link: 'https://images.unsplash.com/photo-1543353071-087092ec3934?auto=format&fit=crop&w=800&q=80',
+    link: 'https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=800&q=80',
     category: 'Breakfast',
     description: 'A cozy brunch-style food card with warm tones and inviting textures.'
   },
