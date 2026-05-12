@@ -187,7 +187,7 @@ h2 {
 .portfolio-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 100%;
 }      
 
 .portfolio-item img {
@@ -198,12 +198,14 @@ h2 {
 
 .portfolio-item p {
     font-size: 1rem;
+    text-align: center;
 }
 
 
 .portfolio-item h3 {
     margin: 1.3rem;
     font-weight: 300;
+    text-align: center;
 }
 
 
