@@ -188,6 +188,11 @@ h2 {
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+.portfolio-item a {
+    display: block;
+    width: 100%;
 }      
 
 .portfolio-item img {
