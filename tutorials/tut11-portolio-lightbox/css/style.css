@@ -1,12 +1,19 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    color: var(--font);
+}
+
+
 /* color palette */
 
 :root {
     --bg-color-1: #ffffff;
-    --bg-color-2: #111111;
-    --font: #5E5E5E;
-    --accent-1: #333333;
-    --accent-2: #92AA83;
-    --dark: #f1f7ee;
+    --bg-color-2: #c09494;
+    --font: #000000;
+    --accent-1: #000000;
+    --accent-2: #000000;
+    --dark: #000000;
 }
 
 
@@ -53,12 +60,20 @@ body {
 
 header {
     padding: 5rem 2rem;
-    margin-bottom: 7rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(106, 103, 103, 0.2);
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 header h1 {
-
-    text-shadow: -5px 5px 0px #00e6e6, -10px 10px 0px #01cccc, -15px 15px 0px #00bdbd;
+    text-shadow: none; 
+    color: #111;
+    font-family: 'Courier New', Courier, ;
+    font-weight: 300;
+    margin: 0;
+    letter-spacing: 30px;
+    margin-left: 50px;
 }
 
 nav a {
@@ -136,24 +151,49 @@ main{
 
 
 
+
+
+
 .about-content,
-.portfolio-content,
-.contact-content {
-    max-width: 60rem;
-    margin: 5rem auto;
+
+.portfolio-content{
+max-width: 95% !important; 
+    margin: 40px auto;
+    padding: 0;
 }
+
+.content-content {
+    margin: 0rem auto;
+    padding-left: 2rem;
+}
+
 
 .about-content h2,
 .portfolio-content h2,
-.contact-content h2 {
+h2 {
+    font-family: 'Courier New', Courier, monospace !important;
+    font-weight: 600;      
+    font-size: 20px; 
+    text-align: left;  
+    letter-spacing: 1px; 
+}
+.content-content h2 {
     margin: 2rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(73, 71, 71, 0.2);
+    margin-right: 1rem;
 }
 
 .portfolio-item {
-    padding: 1rem;
-    background-color: var(--font);
-    color: var(--bg-color-1);
-    border-radius: .3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}      
+
+.portfolio-item img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover; 
 }
 
 .portfolio-item p {
@@ -163,11 +203,10 @@ main{
 
 .portfolio-item h3 {
     margin: 1.3rem;
+    font-weight: 300;
 }
 
-.portfolio-item img {
-    border-radius: .3rem;
-}
+
 
 footer {
     padding: 1rem 2rem;
@@ -198,7 +237,6 @@ footer img {
         margin: 0.1rem;
     }
 }
-/*~~~~~~~~~~~~~~~~~~~flex styling~~~~~~~~~~~~~~~~~~~*/
 
 .flex-container {
     display: flex;
@@ -207,13 +245,27 @@ footer img {
 }
 
 .flex-container-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    align-items: stretch;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+    gap: 80px; 
+    width: 100%;
+    list-style: none;
+    padding: 0;
 }
 
+
 .flex-item-grid {
-    flex: 0 0 17rem;
+   margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Courier New', monospace !important;
+    text-transform: uppercase;
+}
+.flex-item-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;  
+    object-fit: cover;  
+    border-radius: 0.5rem ;
+    box-shadow: none ;
+        transition: transform 0.3s ease;
 }
