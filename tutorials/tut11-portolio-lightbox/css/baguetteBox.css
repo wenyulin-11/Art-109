@@ -55,7 +55,7 @@
   text-align: center;
   line-height: 1.8;
   white-space: normal;
-  color: var(--font);
+  color: var(--accent-1);
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.6);
   font-family: sans-serif;
