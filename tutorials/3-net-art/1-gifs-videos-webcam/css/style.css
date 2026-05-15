@@ -1,0 +1,23 @@
+
+.dancing-dolphin{
+
+    position: absolute;
+    top: 10px;
+    left: 30px;
+
+}
+
+.Swim-wild-div {
+    position: relative;
+    margin: 50px auto;
+    max-width: 600px;
+    font-size: 2rem;
+}
+
+.swimming-dolphin {
+    position: absolute;
+    bottom: 40px;
+    right: 70px;    
+
+
+}
