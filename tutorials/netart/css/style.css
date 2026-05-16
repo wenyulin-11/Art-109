@@ -1,6 +1,4 @@
-
-
-body{
+body {
     background-color: black;
     color: white;
     font: 1.2rem 'Courier New', Courier, monospace;
@@ -22,16 +20,24 @@ body{
     height: 900px;
     display: flex;
     flex-direction: column;
+        overflow: hidden;
+
 }
 
 
 .surveillance-header {
     text-align: center;
-    border-bottom: 2px dashed white;
+    border-bottom: 1px dashed rgb(255, 0, 0);
     font-size: 1rem;
-    padding-bottom: 1px;
-    margin-bottom: 15px;
-    color: rgb(255, 255, 255);
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+    color: rgb(112, 0, 0);
+        font: 1.2rem 'Courier New', Courier, monospace;
+        font-size: 15px;
+        font-weight: 10;
+
+    
+
 }
 
 
@@ -42,6 +48,42 @@ body{
     opacity: 1;
     word-wrap: break-word;
     margin-bottom: 15px;
-white-space: pre-wrap;
+    white-space: pre-wrap;
+
+}
+
+.data-container {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    padding-top: 10px;
+}
+
+.data-scroll {
+    display: flex;
+    flex-direction: column;
+    animation: auto-scroll-data 10000s linear infinite;
+    will-change: transform;
+    
+
+}
+
+@keyframes auto-scroll-data {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+
+#webcam {
+    width: 20%;
+    height: auto;
+    border: 1px solid white;
+    margin-top: 10px;
+    filter: grayscale(100%) contrast(50);
 
 }
