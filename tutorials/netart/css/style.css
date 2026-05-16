@@ -1,0 +1,47 @@
+
+
+body{
+    background-color: black;
+    color: white;
+    font: 1.2rem 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.surveillance-section {
+    border: 1px solid white;
+    padding: 20px;
+    margin: 3rem;
+    background-color: rgb(0, 0, 0);
+    width: 900px;
+    max-width: 900px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.surveillance-header {
+    text-align: center;
+    border-bottom: 2px dashed white;
+    font-size: 1rem;
+    padding-bottom: 1px;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+}
+
+
+.YouTube-watch-history {
+    font-size: 1rem;
+    color: rgb(255, 0, 0);
+    padding: 10px;
+    opacity: 1;
+    word-wrap: break-word;
+    margin-bottom: 15px;
+white-space: pre-wrap;
+
+}
