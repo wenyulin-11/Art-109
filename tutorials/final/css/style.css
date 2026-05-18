@@ -1,36 +1,268 @@
   
+body {
+    background-color:#0d0e12;
+   font-family: Microsoft YaHei, sans-serif;
+
+ color: #9ca3af;
+    font-size: 13px;
+    line-height: 1.5;
+    min-height；100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
 .top-nav {
     background-color: rgb(0, 0, 0);
     padding: 8px 50px;
 display: flex;
 border-bottom: 1px solid white;
-font-size: 12px;
+font-size: 15px;
 position: relative;
-
-
+justify-content: space-between;
+align-items: center;
 }
 
 
-.header
-
-{
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    margin-top: 80px  auto;
-    animation: skew 3s infinite alternate;
+.header {
+    max-width: 1200px;      
+    margin: 0 auto 20px auto;
+    padding-left: 20px;  
+    padding-right: 20px;  
+    box-sizing: border-box; 
+}
+   
 }
 
 .Title {
-    font-size: 2.5rem;
-    color: var(--font);
+   font-family: kaishu, Microsoft YaHei, sans-serif;
+   font-size: 32px;
+    color: #9ca3af;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-shadow: #4b5563 1px 1px, #4b5563 1px 1px, #4b5563 2px 2px;
 }
 
 
 .Intro {
-    font-size: 1.5rem;
-    color: var(--font);
-    margin-top: 2rem;
+    font-size: 12px;
+color: #9ca3af;
+letter-spacing: 1px;
+}
+
+.main-nav {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+position: relative;
+display: flex;
+border-radius: 5px;
+backdrop-filter: blur(10px);
+letter-spacing: 10px;
 
 }
 
-    
+.body {
+    max-width: 950px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 20px;
+    position: relative;
+}
+
+
+.main-nav a {
+    color: #9ca3af;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-weight: bold;
+    border-right: 1px solid #1f2937;
+    transition: all 0.2s;
+}
+.main-nav a:hover, .main-nav a.active {
+    background: #11121a;
+    color: #ffffff;
+}
+
+.module-box {
+    background: rgba(0, 0, 0, 0.75);
+    border: 1px solid #1f2937;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(40, 40, 40, 0.7);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.profile-panel {
+    text-align: center;
+}
+
+.profile-nickname {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.profile-status {
+    color: #afafaf;
+    font-size: 12px;
+    margin: 0;
+}
+.module-title {
+    background: linear-gradient(180deg, #16171f 0%, #000000 100%);
+    border-bottom: 1px solid #1f2937;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.module-content { padding: 15px; }
+
+.profile-avatar {
+    display: flex;
+    background-position: center;
+    border-radius: 4px;
+    color: #4b5563;
+    height: 120px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQwx46NltXeyl_6rXA6Leb2lI1IesPaS1ZSg&s');
+    justify-content: center;
+    margin: 0 auto 15px auto;
+    background-size: cover;
+    align-items: center;
+    width: 120px;
+    font-size: 12px;
+    background-color: #000000;
+    border: 2px solid #1f2937;
+}
+
+
+
+
+
+
+
+
+
+/* 🛠 4. music player css */
+.music-player {
+    background: #000000;
+    border-radius: 6px;
+    padding: 15px;
+    border: 1px solid #1f2937;
+    max-width: 280px;
+    margin: 20px auto; 
+}
+
+.song-name {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 13px;
+}
+.artist-name {
+    color: #4b5563;
+    font-size: 11px;
+    margin: 4px 0 10px 0;
+}
+.progress-container {
+    background: #11121a;
+    border-radius: 10px;
+    height: 5px;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 12px;
+    position: relative;
+    overflow: hidden;
+}
+.progress-bar {
+    background: linear-gradient(90deg, #4b5563, #ffffff);
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+.player-controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.player-controls .btn {
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 12px;
+    color: #4b5563;
+    user-select: none;
+    transition: color 0.2s;
+}
+.player-controls .btn:hover {
+    color: #ffffff;
+}
+.time-display {
+    text-align: center;
+    font-size: 10px;
+    color: #4b5563;
+    font-family: monospace;
+}
+
+/* ==========================================================
+   ❄️ 2. Silver Starlight Falling on Pure Black Background (Dark Special Edition)
+   ========================================================== */
+
+/* Fullscreen container for the animated snow layers */
+.snow-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Prevents blocking clicks on elements underneath */
+    z-index: 1;
+}
+
+/* Small starlight layer: Dense stars with a slow 25s falling animation */
+.layer-small {
+    background-image: 
+        radial-gradient(1.5px 1.5px at 100px 100px, rgba(255,255,255,0.6) 100%, transparent),
+        radial-gradient(2px 2px at 300px 400px, rgba(255,255,255,0.5) 100%, transparent),
+        radial-gradient(1.5px 1.5px at 600px 200px, rgba(255,255,255,0.6) 100%, transparent),
+        radial-gradient(2px 2px at 850px 500px, rgba(255,255,255,0.4) 100%, transparent);
+    background-size: 500px 500px;
+    animation: qzoneSnow 25s linear infinite;
+}
+
+/* Medium starlight layer: Standard size stars with a medium 16s speed */
+.layer-medium {
+    background-image: 
+        radial-gradient(2.5px 2.5px at 200px 150px, rgba(255,255,255,0.7) 100%, transparent), 
+        radial-gradient(3px 3px at 500px 450px, rgba(255,255,255,0.5) 100%, transparent),
+        radial-gradient(2px 2px at 800px 250px, rgba(255,255,255,0.7) 100%, transparent);
+    background-size: 400px 400px;
+    animation: qzoneSnow 16s linear infinite;
+}
+
+/* Large starlight layer: Scattered bigger stars moving fast at 9s */
+.layer-large {
+    background-image: 
+        radial-gradient(4px 4px at 150px 300px, rgba(255,255,255,0.3) 100%, transparent),
+        radial-gradient(5px 5px at 650px 100px, rgba(255,255,255,0.2) 100%, transparent);
+    background-size: 600px 600px;
+    animation: qzoneSnow 9s linear infinite;
+}
+
+/* Keyframe animation for the falling effect from top to bottom */
+@keyframes qzoneSnow {
+    0% { transform: translateY(-100px); }
+    100% { transform: translateY(100vh); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
