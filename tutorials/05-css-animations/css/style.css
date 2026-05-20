@@ -112,9 +112,14 @@ body {
 
 
 .hhhh {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+  background-color: green;
+    color: white;
+    padding: 15px;
+    margin: 50px auto;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all;
 }
 
 .hhhh:hover {
@@ -130,3 +135,18 @@ body {
         transform: rotate(360deg);
     }
 }
+
+.hhhhh {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+.hhhhh:focus {
+  background-color: blue;
+  border-radius: 80%; 
+  animation：margin: 0 20px 0 0;
+}
+
+
+
+
