@@ -111,23 +111,22 @@ body {
 
 
 
+.hhhh {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
 
-.okok {
-    background-color: chartreuse;
-    width: 80vw;
-    animation: move 5s infinite;
+.hhhh:hover {
+  animation: rotate 2s infinite;
 }
 
 
-@keyframes move {
+@keyframes rotate {
     0% {
-        transform: translateX(0);
+        transform: rotate(0deg);
     }
-    50% {
-        transform: translateX(100px);
+    100% {
+        transform: rotate(360deg);
     }
-     100% {
-        transform: translateX(0);
-    }
-
 }
